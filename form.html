@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <form class="container mt-5" style="background-color: rgb(204, 201, 214); border-radius: 5px;width: 40%;;padding: 20px;">
+        <div class="form-text">
+            <label class="form-label"  for="user-name">User Name:</label>
+            <input type="text" class="form-control" id="user-name" style="width:100%">
+        </div>
+        <div class="form-text">
+            <label class="form-label"  for="email">Email:</label>
+            <input type="email" class="form-control" id="email" style="width:100%">
+        </div>
+        <div class="form-text mb-3">
+            <label class="form-label"  for="password">Password:</label>
+            <input type="password" class="form-control" id="password" style="width:100%">
+        </div>
+        <h6>Which is your department?</h6>
+        <div>
+            <select class="form-select mb-4 form-select-sm" name="Department">
+                <option value="1" selected>ICT</option>
+                <option value="2">CSE</option>
+                <option value="3">ICE</option>
+                <option value="4">EEE</option>
+            </select>
+        </div>
+        
+        <h6>Which skills you have?</h6>
+        <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" id = "software-engineering" checked disabled>
+            <label for="software-engineering">Software Engineering</label><br>
+            <input type="checkbox" class="form-check-input" id = "ai-engineering">
+            <label for="ai-engineering">AI Engineering</label><br>
+            <input type="checkbox" class="form-check-input" id = "devops">
+            <label for="devops">DevOps</label><br>
+            <input type="checkbox" class="form-check-input" id = "sqa">
+            <label for="sqa">SQA</label><br>
+            <input type="checkbox" class="form-check-input" id = "hr">
+            <label for="hr">HR</label>
+        </div>
+        <h6>Which is your gender?</h6>
+        <div class="form-check mb-3">
+            <input type="radio" class="form-check-input" id = "male" name = "gender">
+            <label for="male">Male</label><br>
+            <input type="radio" class="form-check-input" id = "female" name = "gender">
+            <label for="female">Female</label>
+        </div>
+
+        <div style = "text-align:center;">
+            <button type="submit" class="btn btn-outline-primary" style="width: 100%;">Button</button>
+        </div>
+        
+
+    </form>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
